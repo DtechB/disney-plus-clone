@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 
 function NavMenu() {
   return (
-    <div className="NavMenu d-none d-xl-flex">
+    <div className="NavMenu d-none d-lg-flex">
       <NavItem icon="/images/home-icon.svg" text="HOME" />
       <NavItem icon="/images/search-icon.svg" text="SEARCH" />
       <NavItem icon="/images/watchlist-icon.svg" text="WHATCHLIST" />
