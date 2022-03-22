@@ -5,6 +5,7 @@
 .NavMenu {
   align-items: center;
   padding: 0 36px;
+  overflow: hidden;
 }
 
 .NavItem {
@@ -40,7 +41,7 @@
   min-height: calc(100vh - 70px);
   padding: 0 calc(3.5vw + 5px);
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .Home::before {
@@ -75,4 +76,16 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
+}
+
+.Movie {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.movieContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }

@@ -38,6 +38,10 @@ const Container = styled(Slider)`
     overflow: visible;
   }
 
+  .slick-dots {
+    bottom: -30px;
+  }
+
   button {
     z-index: 1;
   }
