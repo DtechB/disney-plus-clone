@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Movie({ title, data }) {
@@ -7,7 +8,9 @@ function Movie({ title, data }) {
       <h5 className="mb-3">{title}</h5>
       <div className="movieContent">
         {data.map((item) => (
-          <MovieItem key={item} src={item} />
+          <Link to="/details">
+            <MovieItem key={item} src={item} />
+          </Link>
         ))}
       </div>
     </div>
@@ -17,7 +20,7 @@ function Movie({ title, data }) {
 export default Movie;
 
 const MovieItem = styled.img`
-  width: 23%;
+  width: 100%;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,

@@ -89,3 +89,30 @@
   align-items: center;
   width: 100%;
 }
+
+.movieContent a {
+  width: 23%;
+}
+
+.Details {
+  min-height: calc(100vh - 100px);
+  padding: 5vh calc(3.5vw + 5px);
+  position: relative;
+}
+
+.AppButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 0 20px 10px 0;
+  font-size: 17px;
+}
+
+.AppButton:hover {
+  opacity: 0.8;
+}
+
+.AppButton img {
+  height: 100%;
+}
