@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import movies from "../config/data";
 
-function Movie({ title, data }) {
+function Movie({ title, type }) {
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    const data = movies.filter((item) => item.type === type);
+    setMovie(data);
+  }, [type]);
+
   return (
     <div className="Movie">
       <h5 className="mb-3">{title}</h5>
       <div className="movieContent">
-        {data.map((item) => (
-          <Link to="/details">
-            <MovieItem key={item} src={item} />
+        {movie.map((item) => (
+          <Link to={`/details/${item.slug}`}>
+            <MovieItem key={item.title} src={item.cardImg} />
           </Link>
         ))}
       </div>
