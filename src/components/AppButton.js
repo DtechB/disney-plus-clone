@@ -9,11 +9,21 @@ function AppButton({
   border = "none",
   borderRadius = "5px",
   padding,
+  margin,
+  fontSize,
 }) {
   return (
     <button
       className="AppButton"
-      style={{ backgroundColor, color, border, borderRadius, padding }}
+      style={{
+        backgroundColor,
+        color,
+        border,
+        borderRadius,
+        padding,
+        margin,
+        fontSize,
+      }}
     >
       {icon && icon}
       {title && <span>{title}</span>}

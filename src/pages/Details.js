@@ -25,6 +25,7 @@ function Details() {
           color="black"
           backgroundColor="rgb(255, 255, 255)"
           padding="5px 20px 5px 10px"
+          margin="0 20px 10px 0"
         />
         <AppButton
           icon={<PlayFill color="white" size={30} />}
@@ -33,6 +34,7 @@ function Details() {
           backgroundColor="rgba(0, 0, 0, 0.4)"
           border="1px solid white"
           padding="5px 20px 5px 10px"
+          margin="0 20px 10px 0"
         />
         <AppButton
           icon={<Plus color="white" size={30} />}
@@ -40,6 +42,7 @@ function Details() {
           border="1px solid white"
           borderRadius="50%"
           padding="5px"
+          margin="0 20px 10px 0"
         />
         <AppButton
           icon={<PersonFill color="white" size={30} />}
@@ -47,6 +50,7 @@ function Details() {
           border="1px solid white"
           borderRadius="50%"
           padding="5px"
+          margin="0 20px 10px 0"
         />
       </Controls>
       <SubTitle>2018 • 7m • Family, Fantasy, Kids, Animation</SubTitle>
